@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather Report</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="leftSideContainer">
+                <div class="locationName">
+					<i class="fa-solid fa-location-dot"></i>
+					<p class="locationValue">Kolkata, India</p>
+				</div>
+                <div class="otherDetails">
+                    <hr class="horizontal">
+                    <div class="otherDataSection">
+                        <div class="cloudType">
+                            <i class="fa-solid fa-cloud icon"></i>
+                            <p>CLOUDY</p>
+                            <p class="number">80%</p>
+                        </div>
+                        <div class="humidityType">
+                            <i class="fa-solid fa-droplet icon"></i>
+                            <p>HUMIDITY</p>
+                            <p class="number">50%</p>
+                        </div>
+                        <div class="windType">
+                            <i class="fa-solid fa-wind icon"></i>
+                            <p>WIND</p>
+                            <p class="number">0 km/hr</p>
+                        </div>
+                        <div class="precipitationType">
+                            <i class="fa-solid fa-cloud-rain icon"></i>
+                            <p>PRECIPITATION</p>
+                            <p class="number">17 mm</p>
+                        </div>
+                    </div>
+                    <hr class="horizontal">
+                </div>
+                <div class="weeklyDataSection">
+                    <div class="weekly">
+                        <i class="fa-solid fa-cloud-bolt icon"></i>
+                        <p class="small">MON</p>
+                        <p class="weeklyTemp monday">23°</p>
+                    </div>
+                    <div class="weekly">
+                        <i class="fa-solid fa-cloud-sun icon"></i>
+                        <p class="small">TUE</p>
+                        <p class="weeklyTemp tuesday">30°</p>
+                    </div>
+                    <div class="weekly">
+                        <i class="fa-solid fa-sun icon"></i>
+                        <p class="small">WED</p>
+                        <p class="weeklyTemp wednesday">35°</p>
+                    </div>
+                    <div class="weekly">
+                        <i class="fa-solid fa-cloud-rain icon"></i>
+                        <p class="small">THU</p>
+                        <p class="weeklyTemp thursday">20°</p>
+                    </div>
+                    <div class="weekly">
+                        <i class="fa-solid fa-cloud-sun icon"></i>
+                        <p class="small">FRI</p>
+                        <p class="weeklyTemp friday">27°</p>
+                    </div>
+                    <div class="weekly">
+                        <i class="fa-solid fa-sun icon"></i>
+                        <p class="small">SAT</p>
+                        <p class="weeklyTemp saturday">33°</p>
+                    </div>
+                    <div class="weekly">
+                        <i class="fa-solid fa-sun icon"></i>
+                        <p class="small">SUN</p>
+                        <p class="weeklyTemp sunday">34°</p>
+                    </div>
+                </div>
+            </div>
+			<div class="rightSideContainer">
+				<div class="locationName">
+					<i class="fa-solid fa-location-dot"></i>
+					<p class="locationValue">Kolkata, India</p>
+				</div>
+				<div class="searchLocation">
+					<div class="searchArea">
+						<input type="text" placeholder="Your Location" />
+						<button type="submit">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</div>
+				</div>
+				<div class="temperatureDetails">
+					<div class="iconArea">
+						<i class="fa-solid fa-cloud-moon-rain"></i>
+					</div>
+					<div class="temperatureArea">
+						<p class="temperatureValue">30°C</p>
+					</div>
+                    <div class="temperatureTypeArea">
+                        <p class="temperatureType">Cloudy</p>
+                    </div>
+					<div class="dateArea">
+						<p className="dateTime">20:00 PM - FRIDAY JUNE 9, 2023</p>
+					</div>
+				</div>
+				<div class="sliderArea">
+					<svg
+						id="slider"
+						viewBox="0 0 300 150"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							id="track"
+							d="M10 100 Q 150 50 290 100"
+							fill="none"
+							stroke="#fff"
+							stroke-width="1.2"
+						/>
+						<circle id="thumb" cx="10" cy="100" r="8" fill="#fff" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
